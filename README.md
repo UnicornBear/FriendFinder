@@ -10,9 +10,9 @@ Friend Finder is deployed to Heroku:
 
 # NPM Packages:
 
-npm install express - https://www.npmjs.com/package/express
-npm install body-parser - https://www.npmjs.com/package/body-parser
-npm install path - https://www.npmjs.com/package/path
+- npm install express - https://www.npmjs.com/package/express
+- npm install body-parser - https://www.npmjs.com/package/body-parser
+- npm install path - https://www.npmjs.com/package/path
 
 # Technologies Used:
 - nodeJS
