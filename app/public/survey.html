@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Friend Finder </title>
-        
-    <!-- Latest compiled and minified CSS -->  <!-- https://getbootstrap.com/docs/3.3/getting-started/ -->
-        <link 
-        rel="stylesheet" 
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-        crossorigin="anonymous">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title> Friend Finder </title>
+            
+        <!-- Latest compiled and minified CSS -->  <!-- https://getbootstrap.com/docs/3.3/getting-started/ -->
+            <link 
+            rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+            crossorigin="anonymous">
 
-    <!-- jQuery 3.3.1 -->  <!-- https://code.jquery.com/ -->
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
+        <!-- jQuery 3.3.1 -->  <!-- https://code.jquery.com/ -->
+            <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
 
-    <!-- Latest compiled and minified JavaScript -->  <!-- https://getbootstrap.com/docs/3.3/getting-started/ -->
-        <script 
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-        crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->  <!-- https://getbootstrap.com/docs/3.3/getting-started/ -->
+            <script 
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>
 
-           
-</head>
+    </head>
 
-<body>
-    <div class='conatainer' align="center">
+    <body>
+
+        <div class='conatainer' align="center">
 
         <div class="jumbotron">
             <h1><span class = "glyphicon glyphicon-th-list"></span> Survey</h1>
@@ -39,217 +39,215 @@
             <p><a class="btn btn-primary btn-lg" href="/home" role="button"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></p>
         </div>
 
-        <hr>
+        <div class="row">
+                <div class="col-lg-12">
 
-    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                    <h3 class="panel-title"><strong>About Me</strong></h3>
+                            </div>
+                    
+                            <div class="panel-body">
+                                <form method="POST" role="form">
+            
+                                        <div class="form-group">
+                                            <label for="name">Name (Required)</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <label for="role">Link to Photo Image (Required)</label>
+                                            <input type="text" class="form-control" id="photo">
+                                        </div>
+            
+                                </form>
+                            </div>
+                        </div>
+                </div>  
+        </div>
+    
+            
+            
+        <div class="row">        
+            
             <div class="col-lg-12">
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                                <h3 class="panel-title"><strong>About Me</strong></h3>
-                        </div>
-                   
-                        <div class="panel-body">
-                            <form method="POST" role="form">
-        
-                                    <div class="form-group">
-                                        <label for="name">Name (Required)</label>
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
-        
-                                    <div class="form-group">
-                                        <label for="role">Link to Photo Image (Required)</label>
-                                        <input type="text" class="form-control" id="photo">
-                                    </div>
-        
-                            </form>
-                        </div>
-                    </div>
-            </div>  
-    </div>
-  
-        
-        
-    <div class="row">        
-        
-        <div class="col-lg-12">
-
-            <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><strong>Survey Questions</strong></h3>
-                        </div>
-                   <div class="panel-body">
-            
-            <form method="POST" role="form">
-                                            
-                    <h5><strong>Question 1</strong></h5>
-                    <p>I get upset easily.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q1">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 2</strong></h5>
-                    <p>I am not really interested in others.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q2">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 3</strong></h5>
-                    <p>I have difficulty understanding abstract ideas.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q3">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 4</strong></h5>
-                    <p>I keep in the background.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q4">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 5</strong></h5>
-                    <p>I am relaxed most of the time.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q5">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 6</strong></h5>
-                    <p>I sympathize with others' feelings.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q6">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 7</strong></h5>
-                    <p>I do not have a good imagination.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q7">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 8</strong></h5>
-                    <p>I get chores done right away.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q8">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
-                    
-                    <h5><strong>Question 9</strong></h5>
-                    <p>I don't talk a lot.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q9">
-                        <option value="">Choose an option</option>
-                        <option value="1">1 - Very accurate</option>
-                        <option value="2">2 - Moderately accurate</option>
-                        <option value="3">3 - Neither accurate nor accurate</option>
-                        <option value="4">4 - Moderately accurate</option>
-                        <option value="5">5 - Very accurate</option>
-                    </select>
+                <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><strong>Survey Questions</strong></h3>
+                            </div>
+                    <div class="panel-body">
                 
-                    <h5><strong>Question 10</strong></h5>
-                    <p>I have frequent mood swings.</p>
-                    
-                    <select data-placeholder="" class="chosen-select" id="q10">
-                        <option value="">Choose an option</option>
+                <form method="POST" role="form">
+                                                
+                        <h5><strong>Question 1</strong></h5>
+                        <p>I get upset easily.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q1">
+                            <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </form>
-                <br>
-                <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Submit</button>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 2</strong></h5>
+                        <p>I am not really interested in others.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q2">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 3</strong></h5>
+                        <p>I have difficulty understanding abstract ideas.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q3">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 4</strong></h5>
+                        <p>I keep in the background.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q4">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 5</strong></h5>
+                        <p>I am relaxed most of the time.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q5">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 6</strong></h5>
+                        <p>I sympathize with others' feelings.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q6">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 7</strong></h5>
+                        <p>I do not have a good imagination.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q7">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 8</strong></h5>
+                        <p>I get chores done right away.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q8">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        
+                        <h5><strong>Question 9</strong></h5>
+                        <p>I don't talk a lot.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q9">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    
+                        <h5><strong>Question 10</strong></h5>
+                        <p>I have frequent mood swings.</p>
+                        
+                        <select data-placeholder="" class="chosen-select" id="q10">
+                            <option value="">Choose an option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </form>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/UnicornBear/FriendFinder">GitHub Repo</a></p>
-</div>  
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/UnicornBear/FriendFinder">GitHub Repo</a></p>
+    </div>  
 
 
-<!--modal-->
-    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <div class="caption">Your Friend Match is... </div>
-                        <img src="" id="imagepreview" height=80% width=80%>
-                        <div class="caption" id="caption" ></div>
+    <!--modal-->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <div class="caption">Your Friend Match is... </div>
+                            <img src="" id="imagepreview" height=80% width=80%>
+                            <div class="caption" id="caption" ></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </div>
+        </div>
 
 
-<!-- Javascript -->
-    <script type="text/javascript">
-        $("#add-btn").on("click", function() {
-            event.preventDefault();
-            var newFriend = {
-                name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
-                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val() ]
-            };
-            alert("Searching for your match...");
-            $.post("/api/new", newFriend)
-                .done(function(data) {
-                    console.log(data);
-                    $('#caption').text(data.name);
-                    $('#imagepreview').attr('src', data.photo);
-                    $('#imagemodal').modal('show');
-                });
-            $("#name").val("");
-            $("#photo").val("");
-            [$("#q1").val(""), $("#q2").val(""), $("#q3").val(""), $("#q4").val(""), $("#q5").val(""), $("#q6").val(""), $("#q7").val(""), $("#q8").val(""), $("#q9").val(""), $("#q10").val("") ]
-        });
-    </script>
+    <!-- Javascript -->
+        <script type="text/javascript">
+            $("#add-btn").on("click", function() {
+                event.preventDefault();
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val() ]
+                };
+                alert("Searching for your match...");
+                $.post("/api/new", newFriend)
+                    .done(function(data) {
+                        console.log(data);
+                        $('#caption').text(data.name);
+                        $('#imagepreview').attr('src', data.photo);
+                        $('#imagemodal').modal('show');
+                    });
+                $("#name").val("");
+                $("#photo").val("");
+                [$("#q1").val(""), $("#q2").val(""), $("#q3").val(""), $("#q4").val(""), $("#q5").val(""), $("#q6").val(""), $("#q7").val(""), $("#q8").val(""), $("#q9").val(""), $("#q10").val("") ]
+            });
+        </script>
 
-</body>
+    </body>
 
 </html>
