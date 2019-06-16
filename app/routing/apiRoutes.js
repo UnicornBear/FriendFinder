@@ -1,19 +1,19 @@
 // require PATH
-var path = require('path');
+var path = require("path");
 // load friends data
-var friendList  = require('../data/friends.js');
+var friends  = require("../data/friends");
 
 
 module.exports = function(app) {
     // GET ROUTE JSON - all friends possible
     app.get('/api/friends', function(req,res) {
-        console.log('Success Reading the API Friends');
-        res.json(friendList);
+        console.log("Success Reading the API Friends");
+        res.json(friends);
     });
 
 
     // post new friend addition
-    app.post('/api/new', function(req,res) {
+    app.post("/api/new", function(req,res) {
     // app.post('/api/friends', function(req,res) {
         //setup Var for finding friend match
         var newFriend = req.body;
