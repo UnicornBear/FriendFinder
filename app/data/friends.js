@@ -4,7 +4,7 @@
 
 var friends = [{
     name: 'Rich',
-    photo: '',
+    photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         5,
         1,
@@ -19,7 +19,7 @@ var friends = [{
       ]
 },{
     name: 'Logan',
-    photo: '',
+    photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         4,
         5,
@@ -34,7 +34,7 @@ var friends = [{
       ]
 },{
     name: 'Stephanie',
-    photo: '',
+    photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         4,
         5,
@@ -49,7 +49,7 @@ var friends = [{
       ]
 },{
     name: 'Julie',
-    photo: '',
+    photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         4,
         5,
@@ -64,7 +64,7 @@ var friends = [{
       ]
 },{
     name: 'Jake',
-    photo: '',
+    photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         4,
         5,
@@ -79,7 +79,7 @@ var friends = [{
       ]
 },{
     name: 'Rachel',
-    photo: '',
+    photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         4,
         5,

@@ -1,12 +1,12 @@
 // require PATH
 var path = require("path");
 // load friends data
-var friends  = require("../data/friends");
+var friends  = require("../data/friends.js");
 
 
 module.exports = function(app) {
     // GET ROUTE JSON - all friends possible
-    app.get('/api/friends', function(req,res) {
+    app.get("/api/friends", function(req,res) {
         console.log("Success Reading the API Friends");
         res.json(friends);
     });
@@ -37,7 +37,7 @@ module.exports = function(app) {
             }
         }
         // log report for Best Friend Match
-        console.log('Best Friend Match: ', friends[index]);
+        console.log("Best Friend Match: ", friends[index]);
         // update friends with newFriend
         friends.push(newFriend);
         // 
