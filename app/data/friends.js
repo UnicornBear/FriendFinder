@@ -2,7 +2,7 @@
 
 // start with dummy data
 
-var friendList = [{
+var friends = [{
     name: 'Rich',
     profilePic: '',
     scores: [
@@ -92,6 +92,7 @@ var friendList = [{
         3,
         4
       ]
-},
+}];
 
-];
+// export the array
+module.exports = friends;
