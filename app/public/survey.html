@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Friend Finder </title>
+    
+        <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled Bootstraap JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           
+</head>
+
+<body>
+    <div class='conatainer'>
+        <div class='card-panel #ff5252 red accent-2 col s12 left-align'>
+          <h4><strong>Survey Questions</strong></h4>
+          <div class='card-panel left-align white'>
+            <h5><strong>About You</strong></h5>
+            <br>
+            <input id="name" type="text" class="validate" required>
+            <label class='active' for="name">Name (required)</label>
+            <input id="photo" type="text" class="validate" required>
+            <label class='active' for="name">Link to Photo Image (required)</label>
+            <h5><strong>Question 1</strong></h5>
+            <p>I get upset easily.</p>
+            <select data-placeholder="" class="browser-default" id="q1">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 2</strong></h5>
+            <p>I am not really interested in others.</p>
+            <select data-placeholder="" class="browser-default" id="q2">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 3</strong></h5>
+            <p>I have difficulty understanding abstract ideas.</p>
+            <select data-placeholder="" class="browser-default" id="q3">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 4</strong></h5>
+            <p>I keep in the background.</p>
+            <select data-placeholder="" class="browser-default" id="q4">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 5</strong></h5>
+            <p>I am relaxed most of the time.</p>
+            <select data-placeholder="" class="browser-default" id="q5">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 6</strong></h5>
+            <p>I sympathize with others' feelings.</p>
+            <select data-placeholder="" class="browser-default" id="q6">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 7</strong></h5>
+            <p>I do not have a good imagination.</p>
+            <select data-placeholder="" class="browser-default" id="q7">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 8</strong></h5>
+            <p>I get chores done right away.</p>
+            <select data-placeholder="" class="browser-default" id="q8">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 9</strong></h5>
+            <p>I don't talk a lot.</p>
+            <select data-placeholder="" class="browser-default" id="q9">
+                <option value="">Choose an option</option>
+                <option value="1">1 - Very accurate</option>
+                <option value="2">2 - Moderately accurate</option>
+                <option value="3">3 - Neither accurate nor accurate</option>
+                <option value="4">4 - Moderately accurate</option>
+                <option value="5">5 - Very accurate</option>
+            </select>
+            <h5><strong>Question 10</strong></h5>
+            <p>I have frequent mood swings.</p>
+            <select data-placeholder="" class="browser-default" id="q10">
+                <option value="">Choose an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    </div>
+    <br>
+    <!-- Materialize Modal Trigger/Submit Button -->
+    <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger #546e7a blue-grey" id="submitBtn">Submit</button>
+</div>
+</div>
+
+<div class='col s4'>
+    <p><a href='/api/friendList'>API Friends List</a> | <a href='https://github.com/UnicornBear/FriendFinder'>GitHub Repo</a></p>
+</div>
+
+
+    <!--modal-->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <div class="caption" align="center">Your new bestie is ... </div>
+                        <img src="" id="imagepreview" height=80% width=80%>
+                        <div class="caption" id="caption" align="center"></div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+
+</body>
