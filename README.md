@@ -1,5 +1,4 @@
 # Friend Finder - Node and Express Servers
-** Week 13 | Homework 11
 
 compatibility-based "FriendFinder" application
 
