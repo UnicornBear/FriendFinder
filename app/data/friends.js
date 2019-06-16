@@ -4,7 +4,7 @@
 
 var friends = [{
     name: 'Rich',
-    profilePic: '',
+    photo: '',
     scores: [
         5,
         1,
@@ -19,7 +19,7 @@ var friends = [{
       ]
 },{
     name: 'Logan',
-    profilePic: '',
+    photo: '',
     scores: [
         4,
         5,
@@ -34,7 +34,7 @@ var friends = [{
       ]
 },{
     name: 'Stephanie',
-    profilePic: '',
+    photo: '',
     scores: [
         4,
         5,
@@ -49,7 +49,7 @@ var friends = [{
       ]
 },{
     name: 'Julie',
-    profilePic: '',
+    photo: '',
     scores: [
         4,
         5,
@@ -64,7 +64,7 @@ var friends = [{
       ]
 },{
     name: 'Jake',
-    profilePic: '',
+    photo: '',
     scores: [
         4,
         5,
@@ -79,7 +79,7 @@ var friends = [{
       ]
 },{
     name: 'Rachel',
-    profilePic: '',
+    photo: '',
     scores: [
         4,
         5,
