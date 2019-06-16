@@ -20,8 +20,8 @@ app.use(bodyParser.json({
 
 
 // require the routing to api and home html
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 
 // need to start the server so it can listen to command
