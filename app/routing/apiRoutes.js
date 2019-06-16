@@ -20,7 +20,7 @@ module.exports = function(app) {
         var newScore = newFriend.scores;
         var total = 0;
         var bestMatch = 1000;
-        var index = 1;
+        var index = -1;
 
         // loop through the list of friends available
         for (var i = 0; i < friends.length; i++){
