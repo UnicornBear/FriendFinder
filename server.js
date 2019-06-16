@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 
 // express app and PORT variable
 var app = express();
-var PORT = process.env.PORT || 8800;
+var PORT = process.env.PORT || 8080;
 
 // set up express to parse the data
 app.use(express.static(__dirname + "app/public"));
