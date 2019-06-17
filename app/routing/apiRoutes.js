@@ -15,32 +15,45 @@ module.exports = function(app) {
     // post new friend addition
     app.post("/api/new", function(req,res) {
     // app.post('/api/friends', function(req,res) {
-        //setup Var for finding friend match
+        // setup Var for finding friend match
         var newFriend = req.body;
-        var newScore = newFriend.scores;
-        var total = 0;
-        var bestMatch = 1000;
-        var index = -1;
+        // var newScore = newFriend.scores;
+ 
 
-        // loop through the list of friends available
-        for (var i = 0; i < friends.length; i++){
-            
-            for (var j = 0; j < newScore.length; j++){
+        // parseint for scores
+        for (var i = 0; i < newFriend.scores.length; i++){
+            newFriend.scores[i] = parseInt(newFriend.scores[i]);
+        }
+ 
+        var index = 0;
+        var minDifference = 40;
+        
+        for(var i = 0; i < friends.length; i++) {
+            var total = 0;
+
+            // loop through the scores from 10 questions
+            for (var j = 0; j < friends[i].scores.length; j++){
                 // figure value for each friend
-                var diff = Math.abs(newScore[j] - friends[i].scores[j]);
+                var diff = Math.abs(newFriend.scores[j] - friends[i].scores[j]);
                 total += diff;
+
             }
+
             //
-            if(total < bestMatch){
-                bestMatch = total;
+            if(total < minDifference){
                 index = i;
+                minDifference = total;
             }
         }
-        // log report for Best Friend Match
-        console.log("Best Friend Match: ", friends[index]);
-        // update friends with newFriend
-        friends.push(newFriend);
-        // 
-        res.json(friends[index]);
+        // looks like Rich is always the match, now Logan, since he is first in Friends listing
+
+    // log report for Best Friend Match
+    console.log("Best Friend Match: ", friends[index]);
+
+    // update friends with newFriend
+    friends.push(newFriend);
+    // 
+    res.json(friends[index]);
+
     });
 };
