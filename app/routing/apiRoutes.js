@@ -45,7 +45,10 @@ module.exports = function(app) {
                 minDifference = total;
             }
         }
+<<<<<<< HEAD
         // index 
+=======
+>>>>>>> f124249e575518e57cafa4928356b682c11b3dbb
         // looks like Rich is always the match, now Logan, since he is first in Friends listing
 
     // log report for Best Friend Match
@@ -58,7 +61,10 @@ module.exports = function(app) {
 
     });
 };
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> f124249e575518e57cafa4928356b682c11b3dbb
