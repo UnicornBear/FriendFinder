@@ -3,7 +3,7 @@
 // start with dummy data
 
 var friends = [{
-    name: 'Rich',
+    name: 'Logan',
     photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         5,
@@ -18,22 +18,22 @@ var friends = [{
         1
       ]
 },{
-    name: 'Logan',
+    name: 'Stephanie',
     photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
-        4,
-        5,
-        5,
-        2,
-        4,
-        5,
-        4,
-        4,
-        3,
-        4
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
       ]
 },{
-    name: 'Stephanie',
+    name: 'Jacob',
     photo: 'https://i.pinimg.com/280x280_RS/46/37/b4/4637b4fe3932294d9e2ab1dcf97b38e9.jpg',
     scores: [
         4,
