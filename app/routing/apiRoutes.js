@@ -57,10 +57,3 @@ module.exports = function(app) {
 
     });
 };
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> f124249e575518e57cafa4928356b682c11b3dbb
